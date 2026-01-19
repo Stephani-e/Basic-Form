@@ -45,39 +45,83 @@ function App() {
       <h1 className='form-heading'>Basic Form</h1>
       <form className='register-form' onSubmit={hadleSubmit}>
         <h2 className='form-subheading'>Register</h2>
+
         <p className='form-description'>Please fill in the form below to register.</p>
         {isSubmitted && isValid ? <div className='success-message'>Success! Thank You For Registering!</div>: null}
-        <label>
+
+        <label htmlFor='firstName'>
           First Name:
-          <input onChange={handleFirstNameInputChange} value={values.firstName} className='form-field' type="text" name="firstName" placeholder='First Name' />
         </label>
+        <input
+            id='firstName'
+            onChange={handleFirstNameInputChange}
+            value={values.firstName}
+            className='form-field'
+            type="text"
+            name="firstName"
+            placeholder='First Name'
+        />
         {isSubmitted && !values.firstName ? <span>Please Enter a First Name</span> : null}
 
-        <label>
+        <label htmlFor='lastName'>
           Last Name:
-          <input onChange={handleLastNameInputChange} value={values.lastName} className='form-field' type="text" name="lastName" placeholder='Last Name' />
         </label>
+        <input
+            id='lastName'
+            onChange={handleLastNameInputChange}
+            value={values.lastName}
+            className='form-field'
+            type="text"
+            name="lastName"
+            placeholder='Last Name'
+        />
         {isSubmitted && !values.lastName ? <span>Please Enter a Last Name</span> : null}
 
-        <label>
+        <label htmlFor='email'>
           Email:
-          <input onChange={handleEmailInputChange} value={values.email} className='form-field' type="email" name="email" placeholder='Email'/>
         </label>
+        <input
+            id='email'
+            onChange={handleEmailInputChange}
+            value={values.email}
+            className='form-field'
+            type="email"
+            name="email"
+            placeholder='Email'
+        />
         {isSubmitted && !values.email ? <span>Please Enter a Valid Email</span> : null}
 
-        <label>
+        <label htmlFor='phone'>
           Phone Number:
-          <input onChange={handlePhoneNumberInputChange} value={values.phone} className='form-field' type="tel" name="phone" placeholder='Phone Number'/>
         </label>
+        <input
+            id='phone'
+            onChange={handlePhoneNumberInputChange}
+            value={values.phone}
+            className='form-field'
+            type="tel"
+            name="phone"
+            placeholder='Phone Number'
+        />
         {isSubmitted && !values.phone ? <span>Please Enter a Valid Phone Number</span> : null}
   
-        <label>
+        <label htmlFor='password'>
           Password:
-          <input onChange={handlePasswordInputChange} value={values.password} className='form-field' type="password" name="password" placeholder='Password'/>
         </label>
+        <input
+            id='password'
+            onChange={handlePasswordInputChange}
+            value={values.password}
+            className='form-field'
+            type="password"
+            name="password"
+            placeholder='Password'
+        />
         {isSubmitted && !values.password ? <span>Please Enter a Valid Password</span> : null}
   
-        <button className='form-field' type="submit">Submit</button>
+        <button className='form-field' type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
