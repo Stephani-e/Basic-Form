@@ -2,10 +2,10 @@
 
 A simple and responsive React registration form with basic validation.
 
-## 🖥️ Demo 
+## Demo 
 🔗 **Live Demo:** https://basic-form-two-iota.vercel.app/
 
-## 📋 Features
+## Features
 
 - Collects user inputs: First Name, Last Name, Email, Phone Number, Password
 - Real-time validation with error messages
@@ -13,13 +13,13 @@ A simple and responsive React registration form with basic validation.
 - Controlled inputs using React `useState` hooks
 - Clean and structured UI design
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - React
 - JavaScript (ES6+)
 - HTML/CSS (with optional support for external styling libraries)
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
    ```bash
