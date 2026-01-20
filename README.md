@@ -24,7 +24,7 @@ A simple and responsive React registration form with basic validation.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Stephani-e/Basic-Form.git
-   cd Quiz-App
+   cd Basic-Form
 2. Install Dependencies:
    ```bash
    npm install
